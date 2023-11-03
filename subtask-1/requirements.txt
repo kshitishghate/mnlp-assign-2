@@ -1,0 +1,5 @@
+fairseq==0.12.2
+pandas
+torchaudio
+sentencepiece
+datasets
