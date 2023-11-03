@@ -39,7 +39,7 @@ fairseq-train /data/commonvoice/datasets/gn/ --save-dir /data/commonvoice/datase
 ```
 
 ### Prediction
-
+```
 LS_ROOT = '/data/commonvoice/datasets/gn/'
 SAVE_DIR = '/data/commonvoice/datasets/gn/save'
 CHECKPOINT_FILENAME = 'checkpoint_best.pt'
@@ -50,3 +50,5 @@ for SUBSET in SUBSETS:
     !fairseq-generate {LS_ROOT} --config-yaml config.yaml --gen-subset {SUBSET} \
     --task speech_to_text --path {SAVE_DIR}/{CHECKPOINT_FILENAME} \
     --max-tokens 50000 --beam 5 --scoring wer
+
+```
