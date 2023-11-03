@@ -73,3 +73,8 @@ python subtask-2.py --model_name <> --repo_name <>
 ```
 
 You can change the hyperparameters in the script. They are currently set as the best-performing. Predictions are included in the predictions subfolder.
+
+References:      
+1. We used the huggingface tutorials for ASR with XSL-R and Whisper for subtask-2. Tutorials are linked below:
+   https://huggingface.co/blog/fine-tune-xlsr-wav2vec2
+   https://huggingface.co/blog/fine-tune-whisper
