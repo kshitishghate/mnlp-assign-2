@@ -1,8 +1,0 @@
-datasets>=2.6.1
-git+https://github.com/huggingface/transformers
-librosa
-evaluate
-jiwer
-gradio
-accelerate==0.20.3
-numpy
