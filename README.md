@@ -52,3 +52,24 @@ for SUBSET in SUBSETS:
     --max-tokens 50000 --beam 5 --scoring wer
 
 ```
+
+## Sub-Task 2
+
+We have 3 models that we used in the experiments. From the report, to run       
+1. XLS-R-Guarani use model_name ="XLS-R",
+2. XLS-R-Spanish-Guarani use model_name = "XLS-R-spanish"
+3. Whisper-Guarani use model_name = "whisper-small"
+
+First login to huggingface using 
+```
+from huggingface_hub import login
+login()
+```
+To start fine-tuning move to the subtask-2 folder and run the following:
+```
+pip install -r requirements.txt
+
+python subtask-2.py --model_name <> --repo_name <>
+```
+
+You can change the hyperparameters in the script. They are currently set as the best-performing. Predictions are included in the predictions subfolder.
